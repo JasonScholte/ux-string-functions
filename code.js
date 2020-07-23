@@ -10,7 +10,8 @@
 
 function isEmptyString(string) {
   let result;
-  // Add your code here.
+  // if(string.length === ""){
+  return (!string || string == undefined || string =="" || string.length == 0);
   return result;
 }
 
@@ -39,7 +40,8 @@ console.log(isEmptyString(" ") === false);
 
 function containsWordJava(text) {
   let result;
-  // Add your code here.
+  text.toLowerCase();
+  text.indexOf("java");
   return result;
 }
 
@@ -68,7 +70,7 @@ console.log(containsWordJava("JAVA IS FUN :D") === true);
 */
 
 function trimSentence(text, maxLength) {
-  // Add your code here.
+text.slice(0,16);
   return text;
 }
 
