@@ -39,10 +39,9 @@ console.log(isEmptyString(" ") === false);
 */
 
 function containsWordJava(text) {
-  let result;
-  text.toLowerCase();
-  text.indexOf("java");
-  return result;
+  let result = text.toLowerCase();
+ return result.indexOf("java") != -1;
+
 }
 
 /* 
@@ -70,9 +69,8 @@ console.log(containsWordJava("JAVA IS FUN :D") === true);
 */
 
 function trimSentence(text, maxLength) {
-text.slice(0,16);
-  return text;
-}
+return text.slice(0, maxLength) + "...";
+  }
 
 /* 
   -------TESTS---------------------------------------------------------------
